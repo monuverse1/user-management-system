@@ -36,8 +36,9 @@ app.get("/about", (req, res) => {
 app.use("/api", userRoutes);
 
 // Server Start
-const port = process.env.PORT || 5000;
+// Server Start
+const PORT = process.env.PORT || 5000;
 
-app.listen(5001, () => {
-  console.log(`Express server running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Express server running on port ${PORT}`);
 });
