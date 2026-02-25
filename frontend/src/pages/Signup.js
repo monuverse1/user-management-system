@@ -20,10 +20,10 @@ function Signup() {
     e.preventDefault();
 
     try {
-       await axios.post(
-        "http://localhost:5001/api/register",
-        form
-      );
+axios.post(
+  "https://user-management-system-vv9d.onrender.com/api/register",
+  form
+);
 
       alert("User Registered Successfully ✅");
 
@@ -45,7 +45,7 @@ function Signup() {
             placeholder="Name"
             onChange={handleChange}
             required
-          />
+          /> 
 
           <input
             name="email"
